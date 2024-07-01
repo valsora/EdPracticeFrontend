@@ -1,0 +1,22 @@
+.divISWC {
+    height: 100px;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.pISWC {
+    color: #eeeeee;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+input {
+    background: #121212;
+    border: 0px;
+    border-bottom: 1px solid #eeeeee;
+    color: #50c878;
+    font-size: 1.2rem;
+}
