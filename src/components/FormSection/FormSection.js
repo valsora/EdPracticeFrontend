@@ -1,13 +1,14 @@
-import { useEffect, useState } from 'react';
+import { useState, useCallback } from 'react';
 import InputWord from '../InputWord/InputWord';
 import './FormSection.css';
 
-export default function FromSection({ setVacancies }) {
+export default function FormSection({ setVacancies, setLoading }) {
     const [vacancyName, changeVacancyName] = useState('');
     const [companyName, changeCompanyName] = useState('');
     const [description, changeDescription] = useState('');
 
-    async function parseVacancies() {
+    const parseVacancies = useCallback(async () => {
+        setLoading(true);
         const response = await fetch('http://127.0.0.1:8002/vacancies/parse', {
             method: 'POST',
             headers: {
@@ -25,7 +26,8 @@ export default function FromSection({ setVacancies }) {
         });
         const vacancies = await response.json();
         setVacancies(vacancies);
-    }
+        setLoading(false);
+    }, [vacancyName, companyName, description, setVacancies, setLoading]);
 
     return (
         <section className='formSection' >

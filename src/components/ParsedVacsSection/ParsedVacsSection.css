@@ -1,0 +1,22 @@
+.parsedVacsSection {
+    padding: 40px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.parsedVacsUl {
+    list-style-type: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.parsedVacsLi {
+    width: 100%;
+    border: 1px solid #7bff71;
+    border-radius: 8px;
+    margin: 16px 0;
+    padding: 12px 20px;
+    color: #eeeeee;
+}

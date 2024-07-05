@@ -1,5 +1,8 @@
 .formSection {
     background: #151515;
+    padding-bottom: 20px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
 }
 
 .form {
@@ -22,7 +25,7 @@
     height: 2rem;
     width: fit-content;
     padding: 4px 10px;
-    border: 2px solid #000000;
+    border: 1px solid #000000;
     border-radius: 4px;
     color: #151515;
     font-size: 1rem;
