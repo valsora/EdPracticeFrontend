@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './ParsedVacsSection.css';
 
 export default function ParsedVacsSection({ vacancies, loading, isAll }) {
@@ -5,6 +6,11 @@ export default function ParsedVacsSection({ vacancies, loading, isAll }) {
 
     return (
         <section className='parsedVacsSection'>
+            {isAll && 
+                <nav style={{alignSelf: 'flex-start'}} >
+                    <Link to={'/'} className='linkToAll' >вернуться к парсингу</Link>
+                </nav>
+            }
             {loading && <h2 style={{color: '#eeeeee'}} >...Загрузка...</h2>}
             {!loading && 
                 <ul className='parsedVacsUl' >

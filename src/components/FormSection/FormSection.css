@@ -25,12 +25,28 @@
     height: 2rem;
     width: fit-content;
     padding: 4px 10px;
+    margin-top: 16px;
     border: 1px solid #000000;
     border-radius: 4px;
     color: #151515;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 .parseButton:disabled {
     opacity: 25%;
+}
+
+.linkToAll {
+    color: #7bff71;
+    opacity: 50%;
+}
+
+.linkToAll:hover {
+    opacity: 20%;
+}
+
+.paramsSelect {
+    margin-top: 4px;
+    margin-bottom: 16px;
+    min-width: 140px;
 }
